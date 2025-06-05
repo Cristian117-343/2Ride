@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="MainColor">#FF2D557C</color>
+    <color name="colorAsientoDefault">#E0E0E0</color> <!-- Gris claro -->
+    <color name="colorTextoDefault">#000000</color> <!-- Negro -->
+    <color name="colorAsientoSeleccionado">#4CAF50</color> <!-- Verde -->
+    <color name="colorTextoSeleccionado">#FFFFFF</color> <!-- Blanco -->
+    <color name="colorAccent">#366899</color>
+    <color name="Prueba">#B2FF0000</color>
+</resources>
