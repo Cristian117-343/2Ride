@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
-        <item android:id="@+id/nav_item_one"
-            android:icon="@drawable/menu_user_profile"
-            android:title="Mi Perfil"/>
-        <item android:id="@+id/nav_item_two"
-            android:icon="@drawable/menu_payments"
-            android:title="Tarjetas"/>
 
         <item android:title="">
             <menu>

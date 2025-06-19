@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             startActivity(intent)
         }
 
-        /*//Notificacion de ofertas
+        //Notificacion de ofertas
         val titulos = arrayOf("Nueva Oferta","Nuevo Destino","Quieres Vacacionar?")
         val testo = arrayOf("Hasta 50% para estudiantes!!","Viaja a Monterrey directo!!","Te llevamos a Guadalajara!!")
         val numero = Random.nextInt(0, 3)
@@ -103,6 +103,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 getSystemService(NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.createNotificationChannel(channel)
         }
+
+
         val builder = NotificationCompat.Builder(this, "canal_id")
             .setSmallIcon(R.mipmap.ic_launcher)
             .setContentTitle(titulos[numero])
@@ -111,7 +113,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         with(NotificationManagerCompat.from(this)) {
             notify(101, builder.build())
-        }*/
+        }
 
         fab.setOnClickListener{
             val intent = Intent(this, SeleccionarDestino::class.java)
@@ -227,14 +229,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
-            R.id.nav_item_one -> {
+            /*R.id.nav_item_one -> {
                 val intent = Intent(this, UserProfile::class.java)
                 startActivity(intent)
             }
             R.id.nav_item_two -> {
                 val intent = Intent(this, CardsActivity::class.java)
                 startActivity(intent)
-            }
+            }*/
             R.id.nav_item_three -> {
                 FirebaseAuth.getInstance().signOut()
                 onBackPressed()
