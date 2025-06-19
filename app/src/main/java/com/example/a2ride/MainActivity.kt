@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val headerView = navigationView.getHeaderView(0)
         val navHeaderText = headerView.findViewById<TextView>(R.id.txt_nav_header)
 
-        /*//Comprobacion de incio de sesion
+        //Comprobacion de incio de sesion
         val currentUser = Firebase.auth.currentUser
         if (currentUser != null){
             //Usuario Logeado
@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             startActivity(intent)
         }
 
-        //Notificacion de ofertas
+        /*//Notificacion de ofertas
         val titulos = arrayOf("Nueva Oferta","Nuevo Destino","Quieres Vacacionar?")
         val testo = arrayOf("Hasta 50% para estudiantes!!","Viaja a Monterrey directo!!","Te llevamos a Guadalajara!!")
         val numero = Random.nextInt(0, 3)
